@@ -195,3 +195,31 @@ Keep-Alive: timeout=5
 ## Evidencias
 - Captura o transcripción breve, sin credenciales: HTTP 404: Not Found
 - Limitaciones del ejercicio: Se limita a consultar y mostrar los datos disponibles en la API.
+
+
+# Bloque 07
+
+## Resultado
+- Qué añadí al proyecto: La gestión de destinos desde React Native mediante operaciones CRUD.
+- Ruta o pantalla comprobada: Pantalla de gestión de destinos de la aplicación móvil.
+- Estado y respuesta observados: Comprobé las operaciones para crear, consultar, modificar y eliminar destinos.
+
+## Comprensión
+- Recorrido del dato, explicado con mis palabras: La aplicación envía peticiones a la API, que procesa los cambios y devuelve una respuesta.
+- Cambio guiado y resultado: Implementé las operaciones CRUD siguiendo los pasos del ejercicio.
+- Error encontrado y cómo lo resolví: Revisé las peticiones y los datos enviados para detectar posibles errores.
+
+## Evidencias
+- Captura o transcripción breve, sin credenciales: 
+PATCH cancelar EVT-101
+{
+  "id": "EVT-101",
+  "changes": {
+    "status": "CONFIRMED"
+  },
+  "operation": "UPDATED"
+}
+
+- Limitaciones del ejercicio: Funcionalidad limitada a las operaciones implementadas en el ejercicio.
+
+
