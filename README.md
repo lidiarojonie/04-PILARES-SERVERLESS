@@ -237,3 +237,19 @@ PATCH cancelar EVT-101
 
 ## Evidencias
 - Limitaciones del ejercicio: Funcionalidad limitada a los servicios y recursos configurados durante la práctica.
+
+
+# Bloque 09
+
+## Resultado
+- Qué añadí al proyecto: La integración del proyecto con servicios cloud para gestionar destinos.
+- Ruta o pantalla comprobada: Endpoint de destinos conectado al servicio cloud.
+- Estado y respuesta observados: Probé la comunicación con el servicio y comprobé la respuesta recibida.
+
+## Comprensión
+- Recorrido del dato, explicado con mis palabras: La aplicación envía una petición al backend, que utiliza el servicio cloud y devuelve el resultado.
+- Cambio guiado y resultado: Configuré la conexión siguiendo los pasos del ejercicio y comprobé su funcionamiento.
+- Error encontrado y cómo lo resolví: Revisé la configuración y las peticiones para identificar posibles errores.
+
+## Evidencias
+- Limitaciones del ejercicio: Funcionalidad limitada a los servicios cloud configurados en la práctica.
