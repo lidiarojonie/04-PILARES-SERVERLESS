@@ -178,3 +178,20 @@ Keep-Alive: timeout=5
 
 ## Evidencias
 - Limitaciones del ejercicio: Funcionalidad limitada a las pantallas y operaciones implementadas.
+
+
+# Bloque 06
+
+## Resultado
+- Qué añadí al proyecto: La consulta de destinos desde React Native mediante una petición GET.
+- Ruta o pantalla comprobada: Pantalla de destinos de la aplicación móvil.
+- Estado y respuesta observados: Comprobé la petición y la recepción de datos desde la API.
+
+## Comprensión
+- Recorrido del dato, explicado con mis palabras: La aplicación realiza una petición GET, recibe los datos de la API y los muestra en pantalla.
+- Cambio guiado y resultado: Implementé y probé la consulta siguiendo los pasos del ejercicio.
+- Error encontrado y cómo lo resolví: Revisé la URL y la petición para detectar posibles errores de conexión.
+
+## Evidencias
+- Captura o transcripción breve, sin credenciales: HTTP 404: Not Found
+- Limitaciones del ejercicio: Se limita a consultar y mostrar los datos disponibles en la API.
