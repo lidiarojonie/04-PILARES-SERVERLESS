@@ -105,3 +105,60 @@ Keep-Alive: timeout=5
 {"message":"artist, space y time (HH:mm) son obligatorios"}
 
 - Limitaciones del ejercicio: Funcionalidad limitada a las operaciones implementadas en el ejercicio.
+
+
+# Bloque 04
+
+## Resultado
+- Qué añadí al proyecto: Operaciones CRUD para gestionar destinos.
+- Ruta o pantalla comprobada: Endpoints de destino para crear, consultar, modificar y eliminar datos.
+- Estado y respuesta observados: Probé las operaciones y comprobé las respuestas de la API.
+
+## Comprensión
+- Recorrido del dato, explicado con mis palabras: La API recibe la petición, procesa la operación sobre los datos y devuelve una respuesta.
+- Cambio guiado y resultado: Implementé las operaciones CRUD siguiendo los pasos del ejercicio.
+- Error encontrado y cómo lo resolví: Revisé las peticiones y los datos enviados para corregir posibles errores.
+
+## Evidencias
+- Captura o transcripción breve, sin credenciales: 
+curl -i -X PUT http://localhost:3000/dev/events/EVT-101 -H 'Content-Type: application/json' -d '{"status":"CONFIRMED"}'
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+vary: origin
+access-control-expose-headers: WWW-Authenticate,Server-Authorization
+cache-control: no-cache
+content-length: 69
+Date: Wed, 28 Oct 2026 18:39:03 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"PUT requiere artist, space, time HH:mm y status válido"}
+
+curl -i -X PATCH http://localhost:3000/dev/events/EVT-101 -H 'Content-Type: application/json' -d '{"status":"CONFIRMED"}'
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+vary: origin
+access-control-expose-headers: WWW-Authenticate,Server-Authorization
+cache-control: no-cache
+content-length: 71
+Date: Wed, 28 Oct 2026 18:39:32 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"id":"EVT-101","changes":{"status":"CONFIRMED"},"operation":"UPDATED"}
+
+curl -i http://localhost:3000/dev/events/EVT-101
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+vary: origin
+access-control-expose-headers: WWW-Authenticate,Server-Authorization
+cache-control: no-cache
+content-length: 95
+accept-ranges: bytes
+Date: Wed, 28 Oct 2026 18:39:56 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"id":"EVT-101","artist":"Neon Waves","space":"Main Stage","time":"22:30","status":"CONFIRMED"}
+
+- Limitaciones del ejercicio: Funcionalidad limitada a las operaciones implementadas en el ejercicio.
