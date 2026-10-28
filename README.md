@@ -17,3 +17,34 @@ He modificado el mensaje dentro del objeto JSON en el cuerpo (`body`) de la resp
 - **Thunder Client:** Hice una petición a la ruta local y recibí un código de estado `200 OK` con el JSON actualizado.
 - **curl:** Lancé la petición desde la terminal y obtuve exactamente la misma respuesta JSON.
 - **Log:** Comprobé la consola del servidor y vi el registro del evento ejecutado con éxito.
+
+
+# Bloque 02
+
+## Resultado
+- Qué añadí al proyecto: Un endpoint GET para obtener información del destino.
+- Ruta o pantalla comprobada: La ruta GET del endpoint creado.
+- Estado y respuesta observados: Comprobé la respuesta de la API mediante una petición GET.
+
+## Comprensión
+- Recorrido del dato: La petición llega al endpoint, se procesa y devuelve una respuesta al cliente.
+- Cambio guiado y resultado: Modifiqué el endpoint siguiendo las instrucciones del ejercicio y comprobé el resultado.
+- Error encontrado y cómo lo resolví: Revisé el código y la petición para localizar y corregir posibles errores.
+
+## Evidencias
+- Captura o transcripción breve, sin credenciales: 
+curl -i http://localhost:3000/dev/events/EVT-330
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+vary: origin
+access-control-expose-headers: WWW-Authenticate,Server-Authorization
+cache-control: no-cache
+content-length: 95
+accept-ranges: bytes
+Date: Wed, 28 Oct 2026 18:07:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"id":"EVT-330","artist":"Neon Waves","space":"Main Stage","time":"22:30","status":"CONFIRMED"}
+
+- Limitaciones del ejercicio: Funcionalidad limitada a lo implementado en el ejercicio.
