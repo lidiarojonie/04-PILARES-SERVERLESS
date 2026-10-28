@@ -48,3 +48,60 @@ Keep-Alive: timeout=5
 {"id":"EVT-330","artist":"Neon Waves","space":"Main Stage","time":"22:30","status":"CONFIRMED"}
 
 - Limitaciones del ejercicio: Funcionalidad limitada a lo implementado en el ejercicio.
+
+
+# Bloque 03
+
+## Resultado
+- Qué añadí al proyecto: Un endpoint POST para enviar datos de un destino.
+- Ruta o pantalla comprobada: La ruta POST del endpoint de destino.
+- Estado y respuesta observados: Probé el envío de datos mediante una petición POST.
+
+## Comprensión
+- Recorrido del dato, explicado con mis palabras: El cliente envía los datos en la petición, el endpoint los procesa y devuelve una respuesta.
+- Cambio guiado y resultado: Seguí los pasos para construir y probar el endpoint POST.
+- Error encontrado y cómo lo resolví: Revisé los datos enviados y la petición para detectar posibles errores.
+
+## Evidencias
+- Captura o transcripción breve, sin credenciales: 
+curl -i -X POST http://localhost:3000/dev/events -H 'Content-Type: application/json' -d '{"artist":"Nova Pulse","space":"Main Stage","time":"21:00","status":"CANCELLED"}'
+HTTP/1.1 201 Created
+content-type: application/json; charset=utf-8
+vary: origin
+access-control-expose-headers: WWW-Authenticate,Server-Authorization
+cache-control: no-cache
+content-length: 95
+Date: Wed, 28 Oct 2026 18:18:54 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"id":"EVT-NEW","artist":"Nova Pulse","space":"Main Stage","time":"21:00","status":"CANCELLED"}
+
+curl -i -X POST http://localhost:3000/dev/events -H 'Content-Type: application/json' -d '{"artist":"Nova Pulse","space":"Main Stage","time":"21:00","status":"PAUSED"}'
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+vary: origin
+access-control-expose-headers: WWW-Authenticate,Server-Authorization
+cache-control: no-cache
+content-length: 51
+Date: Wed, 28 Oct 2026 18:19:25 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"status debe ser CONFIRMED o CANCELLED"}
+
+curl -i -X POST http://localhost:3000/dev/events -H 'Content-Type: application/json' -d '{"artist":"Nova Pulse","space":"Main Stage","time":"29:80","status":
+"CANCELLED"}'
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+vary: origin
+access-control-expose-headers: WWW-Authenticate,Server-Authorization
+cache-control: no-cache
+content-length: 59
+Date: Wed, 28 Oct 2026 18:19:47 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"artist, space y time (HH:mm) son obligatorios"}
+
+- Limitaciones del ejercicio: Funcionalidad limitada a las operaciones implementadas en el ejercicio.
