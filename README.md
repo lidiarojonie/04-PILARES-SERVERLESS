@@ -223,3 +223,17 @@ PATCH cancelar EVT-101
 - Limitaciones del ejercicio: Funcionalidad limitada a las operaciones implementadas en el ejercicio.
 
 
+# Bloque 08
+
+## Resultado
+- Qué añadí al proyecto: La configuración de los servicios de AWS para ejecutar el backend serverless.
+- Ruta o pantalla comprobada: Endpoint de destinos desplegado en AWS.
+- Estado y respuesta observados: Comprobé el funcionamiento del endpoint y la respuesta de la API.
+
+## Comprensión
+- Recorrido del dato, explicado con mis palabras: La petición llega al endpoint de AWS, se ejecuta la función correspondiente y se devuelve una respuesta al cliente.
+- Cambio guiado y resultado: Configuré y probé los servicios siguiendo los pasos del ejercicio.
+- Error encontrado y cómo lo resolví: Revisé la configuración del servicio y los registros de ejecución para detectar posibles errores.
+
+## Evidencias
+- Limitaciones del ejercicio: Funcionalidad limitada a los servicios y recursos configurados durante la práctica.
