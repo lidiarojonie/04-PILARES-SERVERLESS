@@ -162,3 +162,19 @@ Keep-Alive: timeout=5
 {"id":"EVT-101","artist":"Neon Waves","space":"Main Stage","time":"22:30","status":"CONFIRMED"}
 
 - Limitaciones del ejercicio: Funcionalidad limitada a las operaciones implementadas en el ejercicio.
+
+
+# Bloque 05
+
+## Resultado
+- Qué añadí al proyecto: Una aplicación móvil con React Native para trabajar con destinos.
+- Ruta o pantalla comprobada: Pantalla de destinos de la aplicación.
+- Estado y respuesta observados: Comprobé el funcionamiento de la pantalla y la comunicación con la API.
+
+## Comprensión
+- Recorrido del dato, explicado con mis palabras: La aplicación envía peticiones a la API, recibe los datos y los muestra en pantalla.
+- Cambio guiado y resultado: Construí y modifiqué la aplicación siguiendo los pasos del ejercicio.
+- Error encontrado y cómo lo resolví: Revisé el código y las peticiones para solucionar posibles errores.
+
+## Evidencias
+- Limitaciones del ejercicio: Funcionalidad limitada a las pantallas y operaciones implementadas.
